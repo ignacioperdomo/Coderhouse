@@ -29,6 +29,7 @@ body{
 }
 
 .barra__lista li a{
+    font-size: 2rem;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -48,8 +49,7 @@ body{
 }
 
 .divGenerico__texto {
-    display: flex;
-    flex-direction: column;
+    font-size: 1.2rem;
 }
 
 .imagen {
@@ -102,6 +102,14 @@ form div:nth-child(1), form div:nth-child(2), form div:nth-child(3) {
     grid-column: 1;
 }
 
+.pie {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: #E5E4DF;
+}
+
 .pie__imagen {
     display: block;
     height: auto;
@@ -110,19 +118,27 @@ form div:nth-child(1), form div:nth-child(2), form div:nth-child(3) {
     padding: 0;
 }
 
-@media screen and (max-width:480px) {
-    .barra__imagen {
-        width: 60%;
-    }
+.pie__div {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
 
-    .barra__lista {
-        font-size: 0.9rem;
-    }
+.pie__div > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-    form {
-        padding: 1rem;
-    }
+.pie__div--imagen {
+    width: 30%;
+}
 
+.pie__final {
+    background-color: #FFFFFF;
+    font-size: small;
+    text-align: center;
 }
 
 @media screen and (max-width:768px){
@@ -149,11 +165,62 @@ form div:nth-child(1), form div:nth-child(2), form div:nth-child(3) {
         font-size: 2rem;
     }
 
+.divGenerico__texto{
+    font-size: 1rem;
+}
+
     form {
         grid-template-columns: 1fr;
     }
 
     .map {
         width: 90%;
+    }
+
+    .pie__div {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .pie__div > div {
+        width: 50%;
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+
+    .pie__div--imagen {
+        width: 20%;
+    }
+
+    .pie__final {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .barra__imagen {
+        width: 60%;
+    }
+
+    .barra__lista {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .pie__div {
+        gap: 1.5rem;
+    }
+
+    .pie__div--imagen {
+        width: 40%;
+    }
+
+    .pie__final {
+        font-size: 0.7rem;
     }
 }
