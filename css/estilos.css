@@ -22,6 +22,7 @@ body{
 .barra__lista {
     list-style: none;
     display: flex;
+    
     gap: 10%;
     color: #322859;
     flex-grow: 1;
@@ -36,9 +37,9 @@ body{
 .divGenerico {
     padding: 2%;
     display: flex;
+    align-items: center;
     margin: 2%;
     gap: 5%;
-    align-items: center;
 }
 
 .divGenerico__lista {
@@ -63,9 +64,19 @@ body{
 }
 
 .contactanos {
-    text-decoration: none;
     list-style: none;
-    align-items: center;
+    margin: 2rem;
+    text-align: center;
+}
+
+.contactanos__boton {
+    display: inline-block;
+    background-color: #322859;
+    color: #D7D7D7;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
 }
 
 h1 {
