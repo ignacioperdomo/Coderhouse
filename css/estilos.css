@@ -38,6 +38,7 @@ body{
     display: flex;
     margin: 2%;
     gap: 5%;
+    align-items: center;
 }
 
 .divGenerico__lista {
@@ -48,7 +49,6 @@ body{
 .divGenerico__texto {
     display: flex;
     flex-direction: column;
-
 }
 
 .imagen {
