@@ -32,7 +32,7 @@ body{
     font-size: 2rem;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 .divGenerico {
@@ -161,6 +161,10 @@ form div:nth-child(1), form div:nth-child(2), form div:nth-child(3) {
         gap: 0.5rem;
     }
 
+    .barra__lista li a {
+        font-size: 1.3rem;
+    }
+
     h1 {
         font-size: 2rem;
     }
@@ -206,6 +210,10 @@ form div:nth-child(1), form div:nth-child(2), form div:nth-child(3) {
 
     .barra__lista {
         font-size: 0.9rem;
+    }
+
+    .barra__lista li a {
+        font-size: 1rem;
     }
 
     form {
