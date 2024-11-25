@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkeo mi html con el css-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <!-- Encabezado-->
+    <header class="barra">
+
+        <a href="../index.html">
+            <img class="barra__imagen" src="/imagenes/Logo.png" alt="Logo" class="logo">
+        </a>
+
+        <!-- Barra de navegación-->
+        <nav>
+            <ul class="barra__lista">
+                <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+                <li><a href="../paginas/servicios.html">Servicios</a></li>
+                <li><a href="../paginas/respuestos.html">Repuestos</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Título principal-->
+    <h1>Contacto</h1>
+
+    <!--Imagen principal-->
+    <img class="map" src="../imagenes/Mapa.png" alt="Ubicación en el mapa">
+
+    <!--Formulario para contacto-->
+    <form action="" method="">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="numero">Teléfono:</label>
+            <input type="text" id="number" name="numero">
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+
+        <!--Botón de envío-->
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <!--Pie de página-->
+    <footer>
+        <div class="divPie">
+            <p> Todos los derechos reservados </p>
+        </div>
+
+        <img class="divPie__imagen" src="../imagenes/Portada.jpg" alt="Pie de página">
+    </footer>
+</body>
+</html>
