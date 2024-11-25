@@ -40,6 +40,11 @@ body{
     gap: 5%;
 }
 
+.divGenerico__lista {
+    text-decoration: none;
+    list-style: none;
+}
+
 .divGenerico__texto {
     display: flex;
     flex-direction: column;
