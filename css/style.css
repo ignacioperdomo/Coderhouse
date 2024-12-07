@@ -1,7 +1,7 @@
 body {
-  background-color: #FFFFFF;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
 }
 
 .barra {
@@ -11,8 +11,9 @@ body {
   margin: 0 auto;
   text-decoration: none;
   border-bottom: 2px solid #D7D7D7;
-  margin: 2%;
   padding: 2%;
+  margin: 2%;
+  background-color: #FFFFFF;
 }
 .barra__imagen {
   width: 40%;
@@ -33,9 +34,10 @@ body {
 
 .divGenerico {
   padding: 2%;
+  margin: 2%;
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
-  margin: 2%;
   gap: 5%;
 }
 .divGenerico__lista {

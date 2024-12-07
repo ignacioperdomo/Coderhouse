@@ -1,9 +1,13 @@
 @import 'variables';
 
+@mixin basico($padding, $margin, $color) {
+    padding: $padding;
+    margin: $margin;
+    background-color: $color;
+}
+
 body {
-    background-color: $color-fondo;
-    margin: 0;
-    padding: 0;
+    @include basico(0, 0, $color-fondo);
 }
 
 .barra { 
@@ -13,8 +17,7 @@ body {
     margin: 0 auto;
     text-decoration: none;
     border-bottom: 2px solid $color-grisC;
-    margin: 2%;
-    padding: 2%;
+    @include basico(2%, 2%, $color-fondo);
 
     &__imagen {
         width: 40%;
@@ -22,10 +25,10 @@ body {
 
     &__lista {
         list-style: none;
-    display: flex;
-    gap: 10%;
-    color: $color-principal;
-    flex-grow: 1;
+        display: flex;
+        gap: 10%;
+        color: $color-principal;
+        flex-grow: 1;
     }
 
     li a{
@@ -37,10 +40,9 @@ body {
 }
 
 .divGenerico {
-    padding: 2%;
+    @include basico(2%, 2%, $color-fondo);
     display: flex;
     align-items: center;
-    margin: 2%;
     gap: 5%;
 
     &__lista {
@@ -106,9 +108,7 @@ form {
 .pie {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    background-color: $color-blanco;
+    @include basico(0, 0, $color-blanco);
 
     &__imagen {
         display: block;
