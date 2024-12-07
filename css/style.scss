@@ -1,0 +1,143 @@
+@import 'variables';
+
+body {
+    background-color: $color-fondo;
+    margin: 0;
+    padding: 0;
+}
+
+.barra { 
+    display: grid; 
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    border-bottom: 2px solid $color-grisC;
+    margin: 2%;
+    padding: 2%;
+
+    &__imagen {
+        width: 40%;
+    }
+
+    &__lista {
+        list-style: none;
+    display: flex;
+    gap: 10%;
+    color: $color-principal;
+    flex-grow: 1;
+    }
+
+    li a{
+        font-size: 2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.7rem;
+    }
+}
+
+.divGenerico {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    gap: 5%;
+
+    &__lista {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    &__texto {
+        font-size: 1.2rem;
+    }
+}
+
+.imagen {
+    width: 40%;
+    align-items: center;
+}
+
+.map {
+    display: block;
+    margin: 2rem auto;
+    width: 60%;
+}
+
+.contactanos {
+    list-style: none;
+    margin: 2rem;
+    text-align: center;
+
+    &__boton {
+        display: inline-block;
+        background-color: $color-principal;
+        color: $color-grisC;
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: $color-principal;
+    background-color: $color-blanco;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    label {
+        display: flex;
+        margin-bottom: 0.5rem;
+    }
+
+    :nth-child(1), div:nth-child(2), div:nth-child(3) {
+        grid-column: 1;
+    }
+}
+
+.pie {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: $color-blanco;
+
+    &__imagen {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__div {
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &--imagen {
+            width: 30%;
+        }
+    }
+
+    &__final {
+        background-color: $color-fondo;
+        font-size: small;
+        text-align: center;
+    }
+}

@@ -22,7 +22,6 @@ body{
 .barra__lista {
     list-style: none;
     display: flex;
-    
     gap: 10%;
     color: #322859;
     flex-grow: 1;
