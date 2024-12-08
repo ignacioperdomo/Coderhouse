@@ -1,0 +1,14 @@
+
+/*Mixin creado para realizar funciones básicas: margen, padding y el color de fondo*/
+@mixin basico($padding, $margin, $color) {
+    padding: $padding;
+    margin: $margin;
+    background-color: $color;
+}
+
+/*Mixin creado para imagenes*/
+@mixin imagenes($padding1, $margin1, $width) {
+    padding: $padding1;
+    margin: $margin1;
+    width: $width;
+}

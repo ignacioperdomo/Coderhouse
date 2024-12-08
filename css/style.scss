@@ -1,11 +1,9 @@
+
+/*Importaciones de los otros scss*/
 @import 'variables';
+@import 'mixin';
 
-@mixin basico($padding, $margin, $color) {
-    padding: $padding;
-    margin: $margin;
-    background-color: $color;
-}
-
+/*Comienzo de estilizado de scss*/
 body {
     @include basico(0, 0, $color-fondo);
 }
@@ -20,7 +18,7 @@ body {
     @include basico(2%, 2%, $color-fondo);
 
     &__imagen {
-        width: 40%;
+        @include imagenes(auto, auto, 40%);
     }
 
     &__lista {
@@ -56,14 +54,14 @@ body {
 }
 
 .imagen {
-    width: 40%;
+    @include imagenes(auto, auto, 40%);
     align-items: center;
 }
 
 .map {
     display: block;
     margin: 2rem auto;
-    width: 60%;
+    @include imagenes(auto, auto, 60%);
 }
 
 .contactanos {
