@@ -29,15 +29,14 @@ body {
 .barra__lista {
   list-style: none;
   display: flex;
-  gap: 10%;
+  gap: 5%;
   color: #322859;
   flex-grow: 1;
 }
 .barra li a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1.7rem;
 }
 
 .divGenerico {
@@ -185,7 +184,8 @@ form :nth-child(1), form div:nth-child(2), form div:nth-child(3) {
   .pie__div {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    gap: 0.5rem;
+    padding: 0.5rem;
     margin: 0;
   }
   .pie__div > div {

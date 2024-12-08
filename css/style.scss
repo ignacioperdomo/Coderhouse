@@ -24,16 +24,15 @@ body {
     &__lista {
         list-style: none;
         display: flex;
-        gap: 10%;
+        gap: 5%;
         color: $color-principal;
         flex-grow: 1;
     }
 
     li a{
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-decoration: none;
         border-radius: 5px;
-        font-size: 1.7rem;
     }
 }
 
