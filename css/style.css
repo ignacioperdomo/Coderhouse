@@ -185,7 +185,8 @@ form :nth-child(1), form div:nth-child(2), form div:nth-child(3) {
   .pie__div {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
   }
   .pie__div > div {
     width: 50%;
@@ -198,7 +199,7 @@ form :nth-child(1), form div:nth-child(2), form div:nth-child(3) {
     width: 20%;
   }
   .pie__final {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding: 1rem;
   }
 }
@@ -227,7 +228,7 @@ form :nth-child(1), form div:nth-child(2), form div:nth-child(3) {
     width: 40%;
   }
   .pie__final {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 
