@@ -1,0 +1,105 @@
+
+/*Estructura creada para hacer el diseño responsive*/
+
+@media screen and (max-width:768px){
+    .barra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        @include basico(0.5%, 2%, $color-fondo);
+
+        &__imagen {
+            @include imagenes(0, 0, 50%);
+        }
+
+        &__lista {
+            flex-direction: column;
+            gap: 0.5rem;
+
+            li a {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .divGenerico {
+        flex-direction: column;
+        align-items: center;
+
+        &__texto {
+            font-size: 1rem;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .map {
+        @include imagenes(auto, auto, 70%);
+    }
+
+    .pie {
+        &__div {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            > div {
+                width: 50%;
+                font-size: 0.9rem;
+                justify-content: center;
+            }
+
+            &--imagen {
+                @include imagenes(0, 0, 20%);
+            }
+        }
+
+        &__final {
+            font-size: 0.8rem;
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .barra {
+
+        &__imagen {
+            @include imagenes(auto, auto, 60%);
+        }
+
+        &__lista {
+            gap: 0.9rem;
+
+            li a {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .pie {
+        &__div {
+            gap: 1.5rem;
+            align-items: center;
+
+            &--imagen {
+                @include imagenes(auto, auto, 40%);
+            }
+        }
+
+        &__final {
+            font-size: 0.7rem;
+        }
+    }
+
+}

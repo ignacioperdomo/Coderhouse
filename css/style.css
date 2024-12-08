@@ -141,4 +141,94 @@ form :nth-child(1), form div:nth-child(2), form div:nth-child(3) {
   text-align: center;
 }
 
+/*Importación del diseñp responsive*/
+/*Estructura creada para hacer el diseño responsive*/
+@media screen and (max-width: 768px) {
+  .barra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0.5%;
+    margin: 2%;
+    background-color: #FFFFFF;
+  }
+  .barra__imagen {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+  .barra__lista {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .barra__lista li a {
+    font-size: 1.3rem;
+  }
+  .divGenerico {
+    flex-direction: column;
+    align-items: center;
+  }
+  .divGenerico__texto {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  form {
+    grid-template-columns: 1fr;
+  }
+  .map {
+    padding: auto;
+    margin: auto;
+    width: 70%;
+  }
+  .pie__div {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .pie__div > div {
+    width: 50%;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+  .pie__div--imagen {
+    padding: 0;
+    margin: 0;
+    width: 20%;
+  }
+  .pie__final {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .barra__imagen {
+    padding: auto;
+    margin: auto;
+    width: 60%;
+  }
+  .barra__lista {
+    gap: 0.9rem;
+  }
+  .barra__lista li a {
+    font-size: 1rem;
+  }
+  form {
+    padding: 1rem;
+  }
+  .pie__div {
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .pie__div--imagen {
+    padding: auto;
+    margin: auto;
+    width: 40%;
+  }
+  .pie__final {
+    font-size: 0.7rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
